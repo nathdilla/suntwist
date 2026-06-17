@@ -1,0 +1,29 @@
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.videoContainer {
+    position: relative;
+    /* width: 100%; */
+    /* height: 100vh; */
+    overflow: hidden;
+    
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.LatestContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* background-color: red; */
+    padding: 50px
+}

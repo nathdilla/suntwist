@@ -1,0 +1,14 @@
+.contact {
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    font-size: 8vw;
+    color:var(--primary-white);
+    container-type: inline-size; /* Makes the container track its own width */
+}

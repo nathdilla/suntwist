@@ -1,0 +1,39 @@
+.container {
+    position: relative;
+    display: inline-block; /* Keeps size tight around poster */
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .splatter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center splatter over poster */
+    z-index: 0;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+  }
+  
+  .poster {
+    width: 25vw;
+    height: auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .posterDetails {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 10px;
+    font-family: 'MesaLane', sans-serif;
+    color: var(--primary-white);
+    font-size: 2rem;
+  }

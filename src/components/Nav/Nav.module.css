@@ -1,0 +1,46 @@
+.nav {
+    font-family: 'MesaLane', sans-serif;
+    color: var(--primary-white);
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+}
+
+.logo {
+    font-size: 3rem;
+    color: var(--vibrant-orange);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menuItem {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 150ms ease, color 150ms ease;
+}
+
+.menuItem:hover {
+    transform: scale(1.05);
+}
+
+.menuItem:focus-visible {
+    outline: 2px solid var(--vibrant-orange);
+    outline-offset: 3px;
+}
