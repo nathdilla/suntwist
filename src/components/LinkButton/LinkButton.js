@@ -5,7 +5,6 @@ export default class LinkButton extends Component {
   render() {
     const { link } = this.props;
     const { text } = this.props;
-    const { image } = this.props;
     return (
         <div className={styles.LinkButton} style={{ flex: '1' }}>
         <div className={styles.contentbox}

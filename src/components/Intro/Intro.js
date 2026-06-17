@@ -4,7 +4,6 @@ import styles from './Intro.module.css'
 import video from '../../assets/videos/output.mp4'
 
 import LinkButton from '../../components/LinkButton/LinkButton'
-import { Link } from 'react-router-dom'
 
 export default class Intro extends Component {
   render() {

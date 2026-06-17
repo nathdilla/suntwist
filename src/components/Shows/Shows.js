@@ -1,10 +1,6 @@
 import React, { Component } from 'react'
 import styles from './Shows.module.css'
 
-import Poster from '../Poster/Poster'
-
-import mar5 from '../../assets/images/3-5-25.jpg'
-
 export default class Shows extends Component {
   render() {
     return (
