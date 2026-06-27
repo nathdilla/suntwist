@@ -3,8 +3,6 @@ import styles from './Intro.module.css'
 
 import video from '../../assets/videos/output.mp4'
 
-import LinkButton from '../../components/LinkButton/LinkButton'
-
 export default class Intro extends Component {
   render() {
     return (
@@ -23,9 +21,11 @@ export default class Intro extends Component {
               <a href="https://open.spotify.com/artist/72XDiHU6dM1C0BkoZqVHbh?si=-CTlB7ImT8yjg5IiKaQIYw" image="https://i.imgur.com">Spotify</a>
               <a href="https://music.apple.com/us/artist/suntwist/1733947699" image="https://i.imgur.com" >Apple Music</a>
               <a href="https://www.youtube.com/@SUNTWISTMUSIC" image="https://i.imgur.com" >YouTube</a>
-            </div>
+          </div>
+          <div className={styles.bottomCorner}>
+            ©2026 suntwist llc, all rights reserved
+          </div>
         </div>
-        
       </div>
     )
   }
