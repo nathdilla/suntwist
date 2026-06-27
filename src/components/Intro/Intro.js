@@ -15,16 +15,17 @@ export default class Intro extends Component {
         </video>
         <div className={styles.introContainer}>
           <div className={styles.introContent}>
-            <div className={styles.introParagraph}><span className={styles.italics}>SUNTWIST</span> is an indie band based in Phoenix, Arizona. 🌵
-            Catch us groovin' at your local venue and listen to our music on streaming platforms! ☀️ 🌪️</div>
-            <div className={styles.buttons}>
-              <LinkButton link="https://open.spotify.com/artist/72XDiHU6dM1C0BkoZqVHbh?si=-CTlB7ImT8yjg5IiKaQIYw" text="Spotify 🎧" image="https://i.imgur.com" />
-              <LinkButton link="https://music.apple.com/us/artist/suntwist/1733947699" text="Apple Music 🍎" image="https://i.imgur.com" />
-              <LinkButton link="https://www.youtube.com/@SUNTWISTMUSIC" text="Youtube 📹" image="https://i.imgur.com" />
-              <LinkButton link="https://www.bananastandrecords.com/line-up" text="Banana Stand Records 🍌" image="https://i.imgur.com" />
-            </div>
+            <div className={styles.introParagraph}><span className={styles.italics}>SUNTWIST</span> is an indie band based in Phoenix, Arizona. <br></br>
+            Catch us groovin' at your local venue and listen to our music on streaming platforms!</div>
+            
           </div>
+          <div className={styles.footerButtons}>
+              <a href="https://open.spotify.com/artist/72XDiHU6dM1C0BkoZqVHbh?si=-CTlB7ImT8yjg5IiKaQIYw" image="https://i.imgur.com">Spotify</a>
+              <a href="https://music.apple.com/us/artist/suntwist/1733947699" image="https://i.imgur.com" >Apple Music</a>
+              <a href="https://www.youtube.com/@SUNTWISTMUSIC" image="https://i.imgur.com" >YouTube</a>
+            </div>
         </div>
+        
       </div>
     )
   }

@@ -13,9 +13,12 @@
 }
 
 .showsHeader {
-    font-family: 'MesaLane', sans-serif;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 700;
+    letter-spacing: -5px;
+    font-size: 3rem;
+
     color: var(--yellow);
-    font-size: 4rem;
     padding: 10px;
 
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
@@ -32,4 +35,13 @@
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 
     z-index: 1;
+}
+
+@media (max-width: 800px) {
+    .shows {
+        background-image: url('../../assets/images/_DSC8277.jpeg');
+        /* repeat background image for smaller screens */
+        background-repeat: repeat;
+        background-size: 100% auto;
+    }
 }

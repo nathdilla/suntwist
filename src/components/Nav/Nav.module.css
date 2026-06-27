@@ -1,5 +1,5 @@
 .nav {
-    font-family: 'MesaLane', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     color: var(--primary-white);
     background-color: transparent;
     position: fixed;
@@ -20,7 +20,10 @@
 .logo {
     font-size: 3rem;
     color: var(--vibrant-orange);
+    font-weight: 700;
+    letter-spacing: -5px;
 }
+
 
 .menu {
     display: flex;
@@ -34,13 +37,31 @@
     text-decoration: none;
     cursor: pointer;
     transition: transform 150ms ease, color 150ms ease;
+    letter-spacing: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .menuItem:hover {
     transform: scale(1.05);
+    font-weight: 700;
+    letter-spacing: 10px;
+    transition: transform 150ms ease, color 150ms ease, letter-spacing 150ms ease;
 }
 
 .menuItem:focus-visible {
     outline: 2px solid var(--vibrant-orange);
     outline-offset: 3px;
+}
+
+/* Hide the navigation on small screens (mobile) */
+@media (max-width: 768px) {
+    .menuItem {
+        display: none;
+    }
+
+    .logo {
+    font-size: 2rem;
+    color: var(--vibrant-orange);
+}
 }

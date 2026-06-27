@@ -11,12 +11,12 @@ export default class Main extends Component {
   render() {
     return (
       <div>
-        <Nav />
-        <Intro />
-        <Latest />
-        <Shows />
-        <Merch />
-        <Contact />
+      {!window.innerWidth < 2 && <Nav />}
+      <Intro />
+      <Latest />
+      <Shows />
+      <Merch />
+      <Contact />
       </div>
     )
   }

@@ -160,3 +160,62 @@
         transform: scale(1.25) rotate(2deg);
     }
 }
+
+@media (max-width: 700px) {
+    .arm {
+        left: -250px;
+        top: 120px;
+        width: 150%;
+        z-index: 2;
+        animation: arm-sway-mobile 2s ease-in-out infinite alternate;
+    }
+
+    .lefthand,
+    .righthand {
+        left: -200px;
+        top: 320px;
+        width: 230%;
+        transform: scale(1.25);
+        animation: hand-sway-mobile 2s ease-in-out infinite alternate;
+    }
+
+    .text {
+        margin-bottom: 100px;
+        font-size: clamp(5rem, 10vw, 12rem);
+    }
+} 
+
+
+@media (min-width: 700px) and (max-width: 1300px) {
+    .arm {
+        left: -250px;
+        top: 120px;
+        width: 60%;
+        z-index: 2;
+        animation: arm-sway-mobile 2s ease-in-out infinite alternate;
+    }
+
+    .lefthand,
+    .righthand {
+        left: -100px;
+        top: 170px;
+        width: 90%;
+        transform: scale(1.25);
+        animation: hand-sway-mobile 2s ease-in-out infinite alternate;
+    }
+
+    .text {
+        margin-bottom: 100px;
+        font-size: clamp(5rem, 10vw, 12rem);
+    }
+}
+
+@keyframes arm-sway-mobile {
+    from { transform: scale(1.6) rotate(-2deg); }
+    to   { transform: scale(1.6) rotate(2deg); }
+}
+
+@keyframes hand-sway-mobile {
+    from { transform: scale(1.25) rotate(-2deg); }
+    to   { transform: scale(1.35) rotate(2deg); }
+}
